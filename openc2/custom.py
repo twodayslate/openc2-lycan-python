@@ -116,7 +116,7 @@ def _custom_property_builder(cls, type, properties, version):
     class _CustomProperty(cls, _OpenC2Base, stix2.properties.Property):
 
         if not properties or not isinstance(properties, list):
-            raise ValueError(
+            raise ValueErrr(
                 "Must supply a list, containing tuples. For example, [('property1', IntegerProperty())]"
             )
 
